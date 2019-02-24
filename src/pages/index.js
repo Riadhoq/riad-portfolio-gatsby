@@ -13,7 +13,6 @@ const IndexPage = () => (
     <div style={{ maxWidth: `600px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
-    <p>Test Continuous integration</p>
     {/* <Link to="/page-2/">Go to page 2</Link> */}
   </Layout>
 )
