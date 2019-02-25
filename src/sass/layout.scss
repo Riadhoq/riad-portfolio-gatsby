@@ -1,13 +1,14 @@
 @import "./palette.scss";
 
 main {
-    display: grid;
+    display: flex;
     color: $color1;
     font-family: 'Anton', sans-serif;
     &:hover{
         color: $color2;
     }
     transition: all 4s ease;
+    grid-row-start: auto;
 }
 
 html {

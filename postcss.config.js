@@ -3,7 +3,7 @@ const autoprefixer = require("autoprefixer");
 module.exports = () => ({
     plugins: [
         autoprefixer({
-            browsers: ["last 10 versions"]
+            grid: true, browsers: ['>1%']
         })
     ]
 });

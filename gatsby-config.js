@@ -1,6 +1,4 @@
-const cssnano = require('cssnano');
 const autoprefixer = require('autoprefixer');
-const mqPacker = require('css-mqpacker');
 module.exports = {
   siteMetadata: {
     title: `Coming Soon`,
@@ -23,21 +21,7 @@ module.exports = {
       options: {
         precision: 8,
         postCssPlugins: [
-          autoprefixer(),
-          cssnano({
-            preset: [
-              'default',
-              {
-                autoprefixer: true,
-                discardUnused: true,
-                mergeIdents: true,
-                zindex: true,
-              },
-            ],
-          }),
-          mqPacker({
-            sort: true,
-          }),
+          autoprefixer({ grid: true, browsers: ['>1%'] }),
         ],
       },
     },
