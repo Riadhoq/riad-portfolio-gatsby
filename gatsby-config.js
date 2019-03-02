@@ -21,11 +21,10 @@ module.exports = {
       options: {
         precision: 8,
         postCssPlugins: [
-          autoprefixer({ grid: true, browsers: ['>1%'] }),
+          autoprefixer({ browsers: ['last 2 versions'] }),
         ],
       },
     },
-    `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
