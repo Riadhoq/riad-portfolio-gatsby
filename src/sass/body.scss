@@ -1,0 +1,23 @@
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #151515 0%, #555 200%);
+    color: $whiteText;    
+}
+.container {
+    text-align: center;
+}
+img {
+    margin-top: 2.4em; 
+}
+h1, h2 {
+    color: $colorGold;
+    font-weight: 100;
+}
+h1 {
+    letter-spacing: 5px;
+}
+
+a {
+    color: #E461D9;
+}

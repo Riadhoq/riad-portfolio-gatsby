@@ -1,18 +1,14 @@
 import React from "react"
-// import { Link } from "gatsby"
-import svgElement from '../images/polygon.svg';
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`riadul hoque`, 'portfolio', `application`, `react`]} />
-    <h1>Riadul Hoque</h1>
-    <p>Currently working on the portfolio page</p>
-    <div>
-      <img src={svgElement} alt="Logo" />
+    <SEO title={'Home'} keywords={[`riadul hoque`, 'portfolio',`gold on black`, `full stack`, `web developer`,'dotnet', `application`, `react`]} />
+    <div className="container">
+      <h1>RIADUL HOQUE</h1>
+      <h2>Full Stack Web Developer</h2>
     </div>
-    {/* <Link to="/page-2/">Go to page 2</Link> */}
   </Layout>
 )
 

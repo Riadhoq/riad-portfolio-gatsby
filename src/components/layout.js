@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import Header from "./header"
-import "../sass/layout.scss"
+import "../sass/main.scss"
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -19,10 +19,10 @@ const Layout = ({ children }) => (
         <Header siteTitle={data.site.siteMetadata.title} />
         <div>
           <main>{children}</main>
-          <footer>
-            © {new Date().getFullYear()}, Built with
+          <footer className="container">
+            © {new Date().getFullYear()}, Designed & Implemented by
             {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
+            <a href="https://www.riadulhoque.com">Riadul Hoque</a>
           </footer>
         </div>
       </>

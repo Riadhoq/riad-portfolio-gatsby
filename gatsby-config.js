@@ -1,8 +1,8 @@
 const autoprefixer = require('autoprefixer');
 module.exports = {
   siteMetadata: {
-    title: `Coming Soon`,
-    description: ``,
+    title: `Riadul Hoque | Full Stack Web Developer`,
+    description: `Riadul Hoque Portfolio Site`,
     author: `@riadulhoque`,
   },
   plugins: [
@@ -35,7 +35,7 @@ module.exports = {
         background_color: `#425167`,
         theme_color: `#425167`,
         display: `minimal-ui`,
-        icon: `src/images/Polygon-color.png`, // This path is relative to the root of the site.
+        icon: `src/images/LOGO-1.svg`, // This path is relative to the root of the site.
       },
     },
     {

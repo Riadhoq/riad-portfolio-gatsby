@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import svgElement from '../images/LOGO-1.svg';
 
 const Header = ({ siteTitle }) => (
   <header>
@@ -8,12 +9,10 @@ const Header = ({ siteTitle }) => (
       <h1>
         <Link
           to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`
-          }}
         >
-          {siteTitle}
+          <div className="container">
+            <img src={svgElement} alt="Logo" />
+          </div>
         </Link>
       </h1>
     </div>
