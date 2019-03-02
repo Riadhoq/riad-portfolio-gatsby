@@ -16,7 +16,6 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" />
         <Header siteTitle={data.site.siteMetadata.title} />
         <div>
           <main>{children}</main>
