@@ -3,18 +3,15 @@ import PropTypes from "prop-types"
 import React from "react"
 import svgElement from '../images/logo.svg';
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <header>
     <div>
-      <h1>
-        <Link
-          to="/"
-        >
-          <div className="container">
-            <img src={svgElement} width="125" alt="Logo" />
-          </div>
-        </Link>
-      </h1>
+      <Link
+        to="/"
+      >
+        <img src={svgElement} width="125" alt="Logo" />
+        <a class="button" href="#">Default Button</a>
+      </Link>
     </div>
   </header>
 )
