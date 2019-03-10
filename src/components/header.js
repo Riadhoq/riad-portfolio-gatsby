@@ -10,7 +10,6 @@ const Header = () => (
         to="/"
       >
         <img src={svgElement} width="125" alt="Logo" />
-        <a class="button" href="#">Default Button</a>
       </Link>
     </div>
   </header>

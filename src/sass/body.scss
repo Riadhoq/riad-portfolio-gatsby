@@ -15,3 +15,12 @@ body {
     background: $blackGradient;
     color: $whiteText;
 }
+
+a {
+    // background: linear-gradient(to right bottom, $colorRed, $colorGold);
+    // color: #4e4e4e29;
+    // background-clip: text;
+    color:  $colorRed;
+    font-weight: bold;
+    text-decoration: underline;
+}
