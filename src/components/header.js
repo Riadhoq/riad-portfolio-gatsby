@@ -4,14 +4,47 @@ import React from "react"
 import svgElement from '../images/logo.svg';
 
 const Header = () => (
-  <header>
-    <div>
-      <Link
-        to="/"
-      >
-        <img src={svgElement} width="125" alt="Logo" />
+  <header className="header">
+    <Link
+      to="/"
+      className="logo"
+    >
+      <img src={svgElement} alt="Logo" />
+    </Link>
+    <ul>
+      <li>
+        <Link
+          to="/"
+          className="logo"
+        >
+          About
       </Link>
-    </div>
+      </li>
+      <li>
+        <Link
+          to="/"
+          className="logo"
+        >
+          Resume
+      </Link>
+      </li>
+      <li>
+        <Link
+          to="/"
+          className="logo"
+        >
+          Blog
+      </Link>
+      </li>
+      <li>
+        <Link
+          to="/"
+          className="logo"
+        >
+          Contact
+      </Link>
+      </li>
+    </ul>
   </header>
 )
 
