@@ -1,3 +1,3 @@
 <h1 align="center">
-  Riadul Hoqur Portfolio Page
+  Riadul Hoque Portfolio Page
 </h1>
