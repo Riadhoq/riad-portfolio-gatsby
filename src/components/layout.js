@@ -15,17 +15,18 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <>
+      <div className="container">
         <Header siteTitle={data.site.siteMetadata.title} />
-        <div>
+        <>
           <main>{children}</main>
-          <footer className="container">
-            © {new Date().getFullYear()}, Designed & Implemented by
+          <footer>
+            <p>© {new Date().getFullYear()}, Designed & Implemented by
             {` `}
-            <a href="https://www.riadulhoque.com">Riadul Hoque</a>
+              <a href="https://www.riadulhoque.com">Riadul Hoque</a>
+            </p>
           </footer>
-        </div>
-      </>
+        </>
+      </div>
     )}
   />
 )

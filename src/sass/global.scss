@@ -3,3 +3,17 @@ a {
     font-weight: bold;
     text-decoration: underline;
 }
+
+@supports(grid-area: auto) {    
+    @media screen and (min-width: 50em) {
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, auto);
+            grid-template-areas: "header header header";
+        }
+        header {
+            grid-column: header;
+        }
+    }
+}
