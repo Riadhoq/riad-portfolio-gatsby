@@ -1,3 +1,9 @@
+html, body {
+    font-size: 18px;
+    height: 100%;
+    position: relative;
+}
+
 a {
     color:  $colorRed;
     font-weight: bold;
@@ -11,40 +17,145 @@ a {
 
 .header {
     background: #333333;
-    text-align: center;
+    position: fixed;
+    height: 3.6em;
+    top:0;
+    left:0;
+    right:0;
+    border-bottom: 4px solid $colorGold2;
+    input[type="checkbox"]{
+        display: none;
+    }
     img {
-        width: 124px;
+        width: 54px;
+        padding: 10px 0 0 10px;
         margin: 0;
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+    label {
+        color: $colorGold2;
+        cursor: pointer;
+        padding: 0 1em;
+    }
+
+    /* hamburger */
+    .hamburger {
+        position: relative;
+        right: 2em;
+        cursor: pointer;
+        transition: all 1s cubic-bezier(.19, 1, .22, 1);
+      }
+      
+      .line {
+        position: absolute;
+        background: $colorGold2;
+        margin: 7px;
+        padding: 0 1px;
+        width: 18px;
+        height: .15rem;
+        border-radius: .2rem;
+        transition: all .6s cubic-bezier(.5, .1, 0, 1.2);
+      }
+      
+      .line-1 {
+        top: 0;
+      }
+      
+      .line-2 {
+        top: 7px;
+        width: 14px;
+        transform: translateX(2px);
+        -webkit-transform: translateX(2px);
+      }
+      
+      .line-3 {
+        top: 14px;
+      }
+      
+      input[type=checkbox]:checked ~ label .line-1 {
+        top: 0px;
+        width: 22px;
+        transform: translateX(-11px) rotate(-45deg) translateY(12px);
+      }
+      
+      input[type=checkbox]:checked ~ label .line-2 {
+        opacity: 0;
+      }
+      
+      input[type=checkbox]:checked ~ label .line-3 {
+        top: 14px;
+        width: 22px;
+        transform: translateX(-8px) rotate(45deg) translateY(-8px);
+      }
+
+    /*end hamburger */
+    #menu:checked ~ .nav-menu-container {
+        opacity: 1;
+        visibility: visible;
+    }
+    .nav-menu-container {
+        width: 100%;
+        height: 100vh;
+        background-color: #333333;
+        overflow-y: scroll;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity cubic-bezier(0.075, 0.82, 0.165, 1) 550ms;
     }
     ul {
         display: flex;
-        align-items: center;
-        flex-direction: column;
-        height: 88vh;
-        justify-content: space-around;
-        margin: 0;
-    }
-    li {
-        list-style: none;
         margin: 0;
         width: 100%;
-        outline: $colorGold2 1px solid;
-        a {
-            margin: 0;
+        flex-wrap: wrap;
+        text-align: center;
+        li {
+            list-style: none;
             display: block;
+            margin: 0;
             width: 100%;
-            height: 100%;
-            color: $colorGold2;
-            font-size: 3em;
-            text-decoration: none;
+            a {
+                width: 100%;
+                color: $colorGold2;
+                display: block;
+                text-decoration: none;
+                font-size: 2em;
+                padding: 0.475em;
+                border-bottom: 1px solid $colorGold2;
+                transition: color cubic-bezier(0.075, 0.82, 0.165, 1) 350ms,
+                background-color cubic-bezier(0.075, 0.82, 0.165, 1) 350ms;;
+            }
+            a:hover {
+                background-color: $colorGold2;
+                color: #333333;
+            }
         }
     }
+    ul.menu-social {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        li {
+            a {
+                height: 100%;
+                font-size: 1em;
+                border: none;
+            }
+        }
+    }
+
 }
 
 .hero {
     max-width: 100%;
-    width: 100%;
     height: 100vh;
+    width: 100%;
     background-image: url("../images/background\ image.jpg");
     background-repeat: no-repeat; 
     background-size: cover;
