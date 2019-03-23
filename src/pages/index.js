@@ -19,8 +19,8 @@ const IndexPage = () => (
     />
     <BackgroundImage />
     <div className="hero-header">
-      <h1>RIADUL HOQUE</h1>
-      <h2>Full Stack Web Developer</h2>
+      <h1>PROFESSIONAL WEB DEVELOPER</h1>
+      <h2>I make ideas come to life</h2>
     </div>
   </Layout>
 );

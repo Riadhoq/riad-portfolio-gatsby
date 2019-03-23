@@ -162,7 +162,7 @@ a {
         color: $colorGold2;
         display: block;
         text-decoration: none;
-        font-size: 2em;
+        font-size: calc(8vh - 1.5vw);
         padding: 0.5em;
         border-bottom: 1px solid $colorGold2;
         transition: color cubic-bezier(0.075, 0.82, 0.165, 1) 350ms,
