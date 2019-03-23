@@ -23,7 +23,10 @@ const Header = () => (
         <span className="line line-3" />
       </label>
       <div className="nav-menu-container">
-        <ul className="nav-menu">
+        <ul
+          onClick={() => (document.body.style.overflow = "unset")}
+          className="nav-menu"
+        >
           <li>
             <Link to="/">About</Link>
           </li>
@@ -37,7 +40,10 @@ const Header = () => (
             <Link to="/">Contact</Link>
           </li>
         </ul>
-        <ul className="menu-social">
+        <ul
+          onClick={() => (document.body.style.overflow = "unset")}
+          className="menu-social"
+        >
           <li>
             <a href="linkedin">
               <FaGithubSquare size="3em" />
