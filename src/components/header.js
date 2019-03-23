@@ -24,7 +24,9 @@ const Header = () => (
       </label>
       <div className="nav-menu-container">
         <ul
-          onClick={() => (document.body.style.overflow = "unset")}
+          onClick={() =>
+            (document.getElementsByTagName("html")[0].style.overflow = "unset")
+          }
           className="nav-menu"
         >
           <li>
@@ -41,7 +43,9 @@ const Header = () => (
           </li>
         </ul>
         <ul
-          onClick={() => (document.body.style.overflow = "unset")}
+          onClick={() =>
+            (document.getElementsByTagName("html")[0].style.overflow = "unset")
+          }
           className="menu-social"
         >
           <li>
@@ -74,7 +78,9 @@ Header.defaultProps = {
 };
 
 function handleMenuToggle(e) {
-  document.body.style.overflow = e.target.checked ? "hidden" : "unset";
+  document.getElementsByTagName("html")[0].style.overflow = e.target.checked
+    ? "hidden"
+    : "unset";
 }
 
 export default Header;
