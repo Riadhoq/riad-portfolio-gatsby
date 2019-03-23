@@ -17,20 +17,37 @@ a {
   margin: 0 auto;
 }
 
+.header.is-transparent {
+  background-color: transparent;
+  border-color: transparent;
+  height: 4.5em;
+  transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 350ms all;
+}
+
 .header {
+  .name {
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 1;
+    flex-grow: 1;
+    margin: 0 0.5em;
+    color: $colorGold2;
+  }
   background: $black-bg;
   position: fixed;
-  height: 3.6em;
+  height: 3.5em;
   top: 0;
   left: 0;
+  z-index: 10000;
   right: 0;
-  border-bottom: 1px solid $colorGold2;
+  border-bottom: 0.063em solid $colorGold2;
+  transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 350ms all;
   input[type="checkbox"] {
     display: none;
   }
   img {
-    width: 54px;
-    padding: 10px 0 0 10px;
+    width: 3em;
+    padding: 0.5em 0 0 0.5em;
     margin: 0;
   }
   .navbar {
@@ -105,6 +122,11 @@ a {
     height: 100vh;
   }
 
+  .header ~ .nav-menu-container ~ #menu:checked {
+    background-color: $black-bg;
+    border-color: $colorGold2;
+  }
+
   .nav-menu-container::-webkit-scrollbar {
     display: none; // Safari and Chrome
   }
@@ -116,7 +138,7 @@ a {
     max-height: 0;
     height: 0;
     position: relative;
-    top: 3px;
+    top: 0.063em;
     background-color: $black-bg;
     overflow-y: auto;
     opacity: 0;
@@ -141,7 +163,7 @@ a {
         display: block;
         text-decoration: none;
         font-size: 2em;
-        padding: 0.475em;
+        padding: 0.5em;
         border-bottom: 1px solid $colorGold2;
         transition: color cubic-bezier(0.075, 0.82, 0.165, 1) 350ms,
           background-color cubic-bezier(0.075, 0.82, 0.165, 1) 350ms;
@@ -168,11 +190,5 @@ a {
 }
 
 .hero {
-  max-width: 100%;
   height: 100vh;
-  width: 100%;
-  background-image: url("../images/background\ image.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }

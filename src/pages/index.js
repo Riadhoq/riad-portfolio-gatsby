@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-
+import { BackgroundImage } from "../components/image";
 const IndexPage = () => (
   <Layout>
     <SEO
@@ -17,7 +17,7 @@ const IndexPage = () => (
         `react`
       ]}
     />
-    <div className="hero" />
+    <BackgroundImage />
     <div className="hero-header">
       <h1>RIADUL HOQUE</h1>
       <h2>Full Stack Web Developer</h2>

@@ -3,13 +3,13 @@ import PropTypes from "prop-types";
 import React from "react";
 import svgElement from "../images/logo.svg";
 import { FaGithubSquare, FaLinkedinIn, FaTwitterSquare } from "react-icons/fa";
-
 const Header = () => (
-  <header className="header">
+  <header className="header is-transparent">
     <nav className="navbar">
       <Link to="/" className="logo">
         <img src={svgElement} alt="Logo" />
       </Link>
+      <span className="name">Riadul Hoque</span>
       <input
         onChange={e => handleMenuToggle(e)}
         type="checkbox"
@@ -81,6 +81,19 @@ function handleMenuToggle(e) {
   document.getElementsByTagName("html")[0].style.overflow = e.target.checked
     ? "hidden"
     : "unset";
+  if (e.target.checked) {
+    if (document.getElementsByClassName("header")[0].classList) {
+      document
+        .getElementsByClassName("header")[0]
+        .classList.remove("is-transparent");
+    }
+  } else if (!e.target.checked && window.scrollY < 50) {
+    if (document.getElementsByClassName("header")[0].classList) {
+      document
+        .getElementsByClassName("header")[0]
+        .classList.add("is-transparent");
+    }
+  }
 }
 
 export default Header;
