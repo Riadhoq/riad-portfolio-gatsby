@@ -28,7 +28,7 @@ export const BackgroundImage = () => (
     `}
     render={data => (
       <Img
-        className="hero"
+        className="hero-img"
         fluid={data.placeholderImage.childImageSharp.fluid}
       />
     )}

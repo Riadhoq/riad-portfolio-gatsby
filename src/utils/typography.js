@@ -4,7 +4,7 @@ import githubTheme from "typography-theme-github";
 // const colorGold = styles.colorGold;
 githubTheme.includeNormalize = true;
 githubTheme.baseFontSize = "18px";
-githubTheme.scaleRatio = 2.5;
+githubTheme.scaleRatio = 3.0;
 githubTheme.bodyFontFamily = [
   "Source Sans Pro",
   "Arial",

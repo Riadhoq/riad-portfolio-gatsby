@@ -1,6 +1,9 @@
 .hero {
   height: 20em;
   position: relative;
+  .hero-img {
+    height: 100%;
+  }
 }
 
 .hero-header {
@@ -15,10 +18,14 @@
     &::before {
       content: "";
       position: absolute;
-      top: 0;
-      width: 100%;
-      height: 0.2em;
-      color: inherit;
+      top: -0.563em;
+      left: 50%;
+      width: 1em;
+      transform: translate(-50%);
+      height: 0.0567em;
+      border-top: 0.0567em solid $colorGold;
+      /* background-color: #873ab7; */
+      z-index: 1;
     }
   }
 }

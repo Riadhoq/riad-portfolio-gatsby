@@ -8,7 +8,7 @@ body {
 
 h1,
 h2 {
-  color: $colorGold;
+  color: $colorWhite;
 }
 
 a {
@@ -30,6 +30,12 @@ a {
   transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 350ms all;
 }
 
+.header.is-transparent {
+  .name {
+    transform: translate(0em, 4em);
+  }
+}
+
 .header {
   .name {
     font-weight: 700;
@@ -38,6 +44,8 @@ a {
     flex-grow: 1;
     margin: 0 0.5em;
     color: $colorGold;
+    transform: translate(0em, 0em);
+    transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 350ms all;
   }
   max-width: 50em;
   margin: auto;
@@ -64,6 +72,7 @@ a {
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
+    overflow: hidden;
   }
 
   label {

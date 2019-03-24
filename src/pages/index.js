@@ -17,12 +17,14 @@ const IndexPage = () => (
         `react`
       ]}
     />
-    <BackgroundImage />
-    <div className="hero-header">
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <h2>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, amet.
-      </h2>
+    <div className="hero">
+      <BackgroundImage />
+      <div className="hero-header">
+        <h1>Riadul Hoque</h1>
+        <h2>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, amet.
+        </h2>
+      </div>
     </div>
   </Layout>
 );
