@@ -29,7 +29,9 @@
     "react-helmet": "^5.2.0",
     "react-icons": "^3.5.0",
     "react-typography": "^0.16.19",
-    "typeface-open-sans": "0.0.54",
+    "typeface-archivo-narrow": "0.0.72",
+    "typeface-julius-sans-one": "0.0.72",
+    "typeface-source-sans-pro": "0.0.54",
     "typography": "^0.16.19",
     "typography-theme-github": "^0.16.19"
   },

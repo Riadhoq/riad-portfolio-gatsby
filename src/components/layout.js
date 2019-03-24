@@ -3,7 +3,9 @@ import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
 import Header from "./header";
 import "../sass/main.scss";
-import "typeface-open-sans";
+import "typeface-julius-sans-one";
+import "typeface-archivo-narrow";
+import "typeface-source-sans-pro";
 import "./scripts/custom";
 const Layout = ({ children }) => (
   <StaticQuery

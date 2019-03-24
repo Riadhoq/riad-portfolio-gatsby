@@ -2,31 +2,32 @@ import Typography from "typography";
 import githubTheme from "typography-theme-github";
 // import styles from "../sass/palette.scss";
 // const colorGold = styles.colorGold;
-
+githubTheme.includeNormalize = true;
 githubTheme.baseFontSize = "18px";
 githubTheme.scaleRatio = 2.5;
 githubTheme.bodyFontFamily = [
-  "Open Sans",
+  "Source Sans Pro",
   "Arial",
   "Helvetica",
   "Segoe UI",
   "sans-serif"
 ];
 githubTheme.headerFontFamily = [
-  "Open Sans",
+  "Julius Sans One",
   "Arial",
   "Helvetica",
   "Segoe UI",
   "sans-serif"
 ];
-githubTheme.headerWeight = 300;
 
 githubTheme.overrideThemeStyles = () => ({
   h1: {
     borderBottom: `none`
   },
   h2: {
-    borderBottom: `none`
+    borderBottom: `none`,
+    fontFamily: `"Archivo Narrow","Arial","Helvetica","Segoe UI","sans-serif"`,
+    letterSpacing: `2px`
   }
 });
 
