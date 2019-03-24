@@ -1,5 +1,5 @@
 .hero {
-  height: 20em;
+  height: 40em;
   position: relative;
   .hero-img {
     height: 100%;
@@ -7,14 +7,16 @@
 }
 
 .hero-header {
-  top: 1em;
-  padding: 1em;
   position: absolute;
-  width: 100%;
+  padding: 1em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
   h1 {
     position: relative;
     text-transform: uppercase;
+    margin: 0 0 0.15em 0;
     &::before {
       content: "";
       position: absolute;
@@ -23,9 +25,12 @@
       width: 1em;
       transform: translate(-50%);
       height: 0.0567em;
-      border-top: 0.0567em solid $colorGold;
+      border-top: 0.0567em solid $gold;
       /* background-color: #873ab7; */
       z-index: 1;
     }
+  }
+  h2 {
+    margin-top: 0;
   }
 }

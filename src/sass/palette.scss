@@ -1,16 +1,10 @@
-$colorGold: #dab662;
-$colorRed: #d20040;
-$colorViolet: #6a2475;
-$colorViolet2: #873ab7;
-$colorViolet3: #e366f9;
-$colorGrey: #6e7783;
-$colorBlack: #252526;
-$colorWhite: #d4d4d4;
-$blackText: #555;
-$whiteText: hsla(0, 0%, 80%, 0.8);
-$blackGradient: linear-gradient(to right bottom, #151515 0%, #555 200%);
-$black-bg: #333333;
+$gold: #dab662;
+// $colorViolet: #873ab7;
+$violet: #7c22b3;
+$gray: #6e7783;
+$white: #d8d8d8;
+$black: #333333;
 
 :export {
-  colorGold: $colorGold;
+  gold: $gold;
 }

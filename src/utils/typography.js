@@ -1,7 +1,7 @@
 import Typography from "typography";
 import githubTheme from "typography-theme-github";
 // import styles from "../sass/palette.scss";
-// const colorGold = styles.colorGold;
+// const gold = styles.gold;
 githubTheme.includeNormalize = true;
 githubTheme.baseFontSize = "18px";
 githubTheme.scaleRatio = 3.0;
@@ -22,7 +22,8 @@ githubTheme.headerFontFamily = [
 
 githubTheme.overrideThemeStyles = () => ({
   h1: {
-    borderBottom: `none`
+    borderBottom: `none`,
+    fontWeight: `100`
   },
   h2: {
     borderBottom: `none`,
