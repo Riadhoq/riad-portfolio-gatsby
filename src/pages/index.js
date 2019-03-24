@@ -19,8 +19,10 @@ const IndexPage = () => (
     />
     <BackgroundImage />
     <div className="hero-header">
-      <h1>PROFESSIONAL WEB DEVELOPER</h1>
-      <h2>I make ideas come to life</h2>
+      <h1>Lorem ipsum dolor sit amet.</h1>
+      <h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, amet.
+      </h2>
     </div>
   </Layout>
 );

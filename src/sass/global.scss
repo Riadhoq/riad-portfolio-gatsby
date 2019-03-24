@@ -1,9 +1,14 @@
 html,
 body {
-  font-size: 18px;
+  font-size: 16px;
   height: 100%;
   position: relative;
   color: $blackText;
+}
+
+h1,
+h2 {
+  color: $colorGold;
 }
 
 a {
@@ -15,6 +20,7 @@ a {
 .portfolio {
   max-width: 50em;
   margin: 0 auto;
+  position: relative;
 }
 
 .header.is-transparent {
@@ -31,8 +37,10 @@ a {
     line-height: 1;
     flex-grow: 1;
     margin: 0 0.5em;
-    color: $colorGold2;
+    color: $colorGold;
   }
+  max-width: 50em;
+  margin: auto;
   background: $black-bg;
   position: fixed;
   height: 3.5em;
@@ -40,7 +48,7 @@ a {
   left: 0;
   z-index: 10000;
   right: 0;
-  border-bottom: 0.063em solid $colorGold2;
+  border-bottom: 0.056em solid $colorGold;
   transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 350ms all;
   input[type="checkbox"] {
     display: none;
@@ -59,22 +67,23 @@ a {
   }
 
   label {
-    color: $colorGold2;
+    color: $colorGold;
     cursor: pointer;
     padding: 0 1em;
+    font-weight: bold;
   }
 
   /* hamburger */
   .hamburger {
     position: relative;
-    right: 2em;
+    right: 1.5em;
     cursor: pointer;
     transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
   }
 
   .line {
     position: absolute;
-    background: $colorGold2;
+    background: $colorGold;
     margin: 7px;
     padding: 0 1px;
     width: 18px;
@@ -104,6 +113,10 @@ a {
     transform: translateX(-11px) rotate(-45deg) translateY(12px);
   }
 
+  .logo {
+    margin-left: 0.5em;
+  }
+
   input[type="checkbox"]:checked ~ label .line-2 {
     opacity: 0;
   }
@@ -124,7 +137,7 @@ a {
 
   .header ~ .nav-menu-container ~ #menu:checked {
     background-color: $black-bg;
-    border-color: $colorGold2;
+    border-color: $colorGold;
   }
 
   .nav-menu-container::-webkit-scrollbar {
@@ -138,7 +151,7 @@ a {
     max-height: 0;
     height: 0;
     position: relative;
-    top: 0.063em;
+    top: 0.056em;
     background-color: $black-bg;
     overflow-y: auto;
     opacity: 0;
@@ -159,17 +172,17 @@ a {
       width: 100%;
       a {
         width: 100%;
-        color: $colorGold2;
+        color: $colorGold;
         display: block;
         text-decoration: none;
-        font-size: calc(8vh - 1.5vw);
+        font-size: 2em;
         padding: 0.5em;
-        border-bottom: 1px solid $colorGold2;
+        border-bottom: 1px solid $colorGold;
         transition: color cubic-bezier(0.075, 0.82, 0.165, 1) 350ms,
           background-color cubic-bezier(0.075, 0.82, 0.165, 1) 350ms;
       }
       a:hover {
-        background-color: $colorGold2;
+        background-color: $colorGold;
         color: $black-bg;
       }
     }
@@ -187,8 +200,4 @@ a {
       }
     }
   }
-}
-
-.hero {
-  height: 100vh;
 }

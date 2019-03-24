@@ -23,12 +23,7 @@ const Header = () => (
         <span className="line line-3" />
       </label>
       <div className="nav-menu-container">
-        <ul
-          onClick={() =>
-            (document.getElementsByTagName("html")[0].style.overflow = "unset")
-          }
-          className="nav-menu"
-        >
+        <ul onClick={() => handleMenuItemClick()} className="nav-menu">
           <li>
             <Link to="/">About</Link>
           </li>
@@ -42,12 +37,7 @@ const Header = () => (
             <Link to="/">Contact</Link>
           </li>
         </ul>
-        <ul
-          onClick={() =>
-            (document.getElementsByTagName("html")[0].style.overflow = "unset")
-          }
-          className="menu-social"
-        >
+        <ul onClick={() => handleMenuItemClick()} className="menu-social">
           <li>
             <a href="linkedin">
               <FaGithubSquare size="3em" />
@@ -87,13 +77,17 @@ function handleMenuToggle(e) {
         .getElementsByClassName("header")[0]
         .classList.remove("is-transparent");
     }
-  } else if (!e.target.checked && window.scrollY < 50) {
+  } else if (!e.target.checked && window.scrollY < 35) {
     if (document.getElementsByClassName("header")[0].classList) {
       document
         .getElementsByClassName("header")[0]
         .classList.add("is-transparent");
     }
   }
+}
+
+function handleMenuItemClick() {
+  document.getElementsByTagName("html")[0].style.overflow = "unset";
 }
 
 export default Header;

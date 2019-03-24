@@ -1,6 +1,6 @@
 try {
   window.addEventListener("scroll", () => {
-    if (window.scrollY >= 50) {
+    if (window.scrollY >= 35) {
       if (
         document.getElementsByClassName("header")[0] &&
         document.getElementsByClassName("header")[0].classList
