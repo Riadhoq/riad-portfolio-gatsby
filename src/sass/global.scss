@@ -1,6 +1,6 @@
 html,
 body {
-  font-size: 16px;
+  font-size: 18px;
   height: 100%;
   position: relative;
   color: $gray;
@@ -78,14 +78,13 @@ a {
   label {
     color: $white;
     cursor: pointer;
-    padding: 0 1em;
+    padding: 0 2.5em;
     font-weight: bold;
   }
 
   /* hamburger */
   .hamburger {
     position: relative;
-    right: 1.5em;
     cursor: pointer;
     transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
   }

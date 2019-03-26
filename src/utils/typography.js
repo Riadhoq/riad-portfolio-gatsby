@@ -5,6 +5,7 @@ import githubTheme from "typography-theme-github";
 githubTheme.includeNormalize = true;
 githubTheme.baseFontSize = "18px";
 githubTheme.scaleRatio = 3.0;
+githubTheme.blockMarginBottom = 1;
 githubTheme.bodyFontFamily = [
   "Source Sans Pro",
   "Arial",
@@ -13,7 +14,7 @@ githubTheme.bodyFontFamily = [
   "sans-serif"
 ];
 githubTheme.headerFontFamily = [
-  "Julius Sans One",
+  "Archivo Narrow",
   "Arial",
   "Helvetica",
   "Segoe UI",
@@ -23,12 +24,15 @@ githubTheme.headerFontFamily = [
 githubTheme.overrideThemeStyles = () => ({
   h1: {
     borderBottom: `none`,
+    fontFamily: `"Julius Sans One","Arial","Helvetica","Segoe UI","sans-serif"`,
     fontWeight: `100`
   },
   h2: {
     borderBottom: `none`,
-    fontFamily: `"Archivo Narrow","Arial","Helvetica","Segoe UI","sans-serif"`,
-    letterSpacing: `2px`
+    letterSpacing: `.11em`
+  },
+  h3: {
+    letterSpacing: `.025em`
   }
 });
 
