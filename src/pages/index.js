@@ -19,7 +19,7 @@ const IndexPage = () => (
     />
     <section className="hero">
       <BackgroundImage />
-      <div className="hero-header">
+      <div className="hero-header animated slideInUp">
         <h1 className="h1">Riadul Hoque</h1>
         <h2 className="h2">Full Stack Web Developer</h2>
         <p className="p">

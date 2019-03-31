@@ -96,6 +96,7 @@ function handleMenuToggle(e) {
 
 function handleMenuItemClick() {
   document.getElementsByTagName("html")[0].style.overflow = "unset";
+  document.getElementsByName("menu")[0].checked = false;
 }
 
 export default Header;
