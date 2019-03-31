@@ -24,32 +24,40 @@ const Header = () => (
       </label>
       <div className="nav-menu-container">
         <ul onClick={() => handleMenuItemClick()} className="nav-menu">
-          <li>
-            <Link to="/">About</Link>
+          <li className="nav-item">
+            <Link className="nav-link" to="/">
+              About
+            </Link>
           </li>
-          <li>
-            <Link to="/">Resume</Link>
+          <li className="nav-item">
+            <Link className="nav-link" to="/">
+              Resume
+            </Link>
           </li>
-          <li>
-            <Link to="/blog">Blog</Link>
+          <li className="nav-item">
+            <Link className="nav-link" to="/blog">
+              Blog
+            </Link>
           </li>
-          <li>
-            <Link to="/">Contact</Link>
+          <li className="nav-item">
+            <Link className="nav-link" to="/">
+              Contact
+            </Link>
           </li>
         </ul>
         <ul onClick={() => handleMenuItemClick()} className="menu-social">
-          <li>
-            <a href="linkedin">
+          <li className="nav-item">
+            <a className="nav-link" href="linkedin">
               <FaGithubSquare size="3em" />
             </a>
           </li>
-          <li>
-            <a href="linkedin">
+          <li className="nav-item">
+            <a className="nav-link" href="linkedin">
               <FaLinkedinIn size="3em" />
             </a>
           </li>
-          <li>
-            <a href="linkedin">
+          <li className="nav-item">
+            <a className="nav-link" href="linkedin">
               <FaTwitterSquare size="3em" />
             </a>
           </li>

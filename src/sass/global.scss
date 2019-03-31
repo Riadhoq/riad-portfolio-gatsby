@@ -78,7 +78,7 @@ a {
   label {
     color: $white;
     cursor: pointer;
-    padding: 0 2.5em;
+    padding: 0 2.5em 0 0;
     font-weight: bold;
   }
 
@@ -173,12 +173,12 @@ a {
     width: 100%;
     flex-wrap: wrap;
     text-align: center;
-    li {
+    .nav-item {
       list-style: none;
       display: block;
       margin: 0;
       width: 100%;
-      a {
+      .nav-link {
         width: 100%;
         color: $gold;
         display: block;
@@ -189,19 +189,19 @@ a {
         transition: color cubic-bezier(0.075, 0.82, 0.165, 1) 350ms,
           background-color cubic-bezier(0.075, 0.82, 0.165, 1) 350ms;
       }
-      a:hover {
+      .nav-link:hover {
         background-color: $gold;
         color: $black;
       }
     }
   }
-  ul.menu-social {
+  .menu-social {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
     margin-bottom: 3em;
-    li {
-      a {
+    .nav-item {
+      .nav-link {
         height: 100%;
         font-size: 1em;
         border: none;
