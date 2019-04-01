@@ -231,3 +231,12 @@ a {
   animation-duration: 500ms;
   animation-fill-mode: both;
 }
+
+.footer {
+  background-color: $black;
+  padding: 2em;
+  text-align: center;
+  p {
+    margin: 0;
+  }
+}

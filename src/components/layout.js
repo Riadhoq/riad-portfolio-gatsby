@@ -23,7 +23,7 @@ const Layout = ({ children }) => (
         <Header siteTitle={data.site.siteMetadata.title} />
         <>
           <main>{children}</main>
-          <footer>
+          <footer className="footer">
             <p>
               © {new Date().getFullYear()}, Designed & Implemented by
               {` `}
