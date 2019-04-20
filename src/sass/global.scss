@@ -8,11 +8,11 @@ body {
 
 h1,
 h2 {
-  color: $white;
+  color: $gray-300;
 }
 
 a {
-  color: $black;
+  color: $gray-900;
   font-weight: bold;
   text-decoration: none;
   background-image: $anchor-bg;
@@ -49,13 +49,13 @@ a {
     line-height: 1;
     flex-grow: 1;
     margin: 0 0.5em;
-    color: $white;
+    color: $gray-300;
     transform: translate(0em, 0em);
     transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 350ms all;
   }
   max-width: 50em;
   margin: auto;
-  background: $black;
+  background: $gray-900;
   position: fixed;
   height: 3.5em;
   top: 0;
@@ -81,7 +81,7 @@ a {
   }
 
   label {
-    color: $white;
+    color: $gray-300;
     cursor: pointer;
     padding: 0 2.5em 2px 0;
     font-weight: bold;
@@ -96,7 +96,7 @@ a {
 
   .line {
     position: absolute;
-    background: $gold;
+    background: $gold-500;
     margin: 7px;
     padding: 0 1px;
     width: 18px;
@@ -149,8 +149,8 @@ a {
   }
 
   .header ~ .nav-menu-container ~ #menu:checked {
-    background-color: $black;
-    border-color: $gold;
+    background-color: $gray-900;
+    border-color: $gold-500;
   }
 
   .nav-menu-container::-webkit-scrollbar {
@@ -165,7 +165,7 @@ a {
     height: 0;
     position: relative;
     top: 0.056em;
-    background-color: $black;
+    background-color: $gray-900;
     overflow-y: auto;
     opacity: 0;
     visibility: hidden;
@@ -184,7 +184,7 @@ a {
       margin: 0;
       width: 100%;
       .nav-link {
-        color: $white;
+        color: $gray-300;
         display: block;
         text-decoration: none;
         font-size: 1em;
@@ -193,8 +193,8 @@ a {
           background-color cubic-bezier(0.075, 0.82, 0.165, 1) 350ms;
       }
       .nav-link:hover {
-        background-color: $gold;
-        color: $black;
+        background-color: $gold-500;
+        color: $gray-900;
       }
     }
   }
@@ -237,11 +237,11 @@ a {
 }
 
 .footer {
-  background-color: $black;
+  background-color: $gray-900;
   padding: 2em;
   text-align: center;
   a {
-    color: $gold;
+    color: $gold-500;
   }
   p {
     margin: 0;
