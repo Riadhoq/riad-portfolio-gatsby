@@ -22,7 +22,7 @@ const IndexPage = () => (
       <div className="hero-header animated slideInUp">
         <h1 className="h1">Riadul Hoque</h1>
         <h2 className="h2">Full Stack Web Developer</h2>
-        <p className="p">Complex problem, simple solution</p>
+        <p className="p">Complex problems, simple solutions</p>
       </div>
     </section>
     <section className="about">

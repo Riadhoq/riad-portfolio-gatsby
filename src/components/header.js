@@ -31,12 +31,12 @@ const Header = () => (
           </li>
           <li className="nav-item">
             <Link className="nav-link" to="/">
-              Resume
+              Projects
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/blog">
-              Blog
+            <Link className="nav-link" to="/">
+              Skills
             </Link>
           </li>
           <li className="nav-item">

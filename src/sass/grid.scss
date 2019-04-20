@@ -29,8 +29,9 @@
         flex-wrap: nowrap;
         flex-grow: 1;
         .nav-item {
+          padding: 0 0 0 0.5em;
           .nav-link {
-            padding: 0em 1.5em;
+            padding: 0em 1em;
             border: none;
             font-size: 1em;
           }
