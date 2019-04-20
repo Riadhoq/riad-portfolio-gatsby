@@ -1,10 +1,10 @@
 .hero {
-  height: 40em;
+  max-height: 40em;
+  height: 100vh;
   position: relative;
   .hero-img {
     height: 100%;
   }
-  margin-bottom: $margin-bottom;
 }
 
 .hero-header {

@@ -25,7 +25,6 @@ a {
 
 .header.is-transparent {
   background-color: transparent;
-  border-color: transparent;
   height: 4.5em;
   transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 350ms all;
 }
@@ -37,6 +36,9 @@ a {
 }
 
 .header {
+  font-family: "Archivo Narrow", "Arial", "Helvetica", "Segoe UI", "sans-serif";
+  letter-spacing: 1px;
+  text-transform: uppercase;
   .name {
     font-weight: 700;
     font-size: 1em;
@@ -56,7 +58,6 @@ a {
   left: 0;
   z-index: 10000;
   right: 0;
-  border-bottom: 0.056em solid $gold;
   transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 350ms all;
   input[type="checkbox"] {
     display: none;
@@ -78,7 +79,7 @@ a {
   label {
     color: $white;
     cursor: pointer;
-    padding: 0 2.5em 0 0;
+    padding: 0 2.5em 2px 0;
     font-weight: bold;
   }
 
@@ -101,7 +102,7 @@ a {
   }
 
   .line-1 {
-    top: 0;
+    top: 0px;
   }
 
   .line-2 {
@@ -116,7 +117,7 @@ a {
   }
 
   input[type="checkbox"]:checked ~ label .line-1 {
-    top: 0px;
+    top: -2px;
     width: 22px;
     transform: translateX(-11px) rotate(-45deg) translateY(12px);
   }
@@ -130,7 +131,7 @@ a {
   }
 
   input[type="checkbox"]:checked ~ label .line-3 {
-    top: 14px;
+    top: 12px;
     width: 22px;
     transform: translateX(-8px) rotate(45deg) translateY(-8px);
   }
@@ -179,13 +180,11 @@ a {
       margin: 0;
       width: 100%;
       .nav-link {
-        width: 100%;
-        color: $gold;
+        color: $white;
         display: block;
         text-decoration: none;
-        font-size: 2em;
-        padding: 0.5em;
-        border-bottom: 1px solid $gold;
+        font-size: 1em;
+        padding: 1em;
         transition: color cubic-bezier(0.075, 0.82, 0.165, 1) 350ms,
           background-color cubic-bezier(0.075, 0.82, 0.165, 1) 350ms;
       }
@@ -203,8 +202,9 @@ a {
     .nav-item {
       .nav-link {
         height: 100%;
-        font-size: 1em;
+        font-size: 0.8em;
         border: none;
+        padding-top: 1.4em;
       }
     }
   }

@@ -22,7 +22,7 @@
         opacity: 1;
         display: flex;
         background: transparent;
-        margin-right: 0.8em;
+        align-items: center;
       }
 
       .nav-menu {
@@ -30,23 +30,14 @@
         flex-grow: 1;
         .nav-item {
           .nav-link {
-            padding: 0em 0.5em;
+            padding-left: 0em 1.5em;
             border: none;
-            font-size: 1.5em;
+            font-size: 1em;
           }
         }
       }
       .menu-social {
-        border-left: solid 0.01em $white;
-        align-items: center;
-        padding-left: 0.5em;
-        margin-bottom: 0;
-        .nav-item {
-          .nav-link {
-            font-size: 0.6em;
-            display: flex;
-          }
-        }
+        display: none;
       }
     }
     .navbar {
