@@ -25,7 +25,7 @@ const IndexPage = () => (
         <p className="p">Complex problems, simple solutions</p>
       </div>
     </section>
-    <section className="about">
+    <section className="about white" id="about">
       <div className="about-container">
         <div className="about-item">
           <h2 className="h2">About Me</h2>

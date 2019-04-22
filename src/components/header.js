@@ -24,26 +24,13 @@ const Header = () => (
       </label>
       <div className="nav-menu-container">
         <ul onClick={() => handleMenuItemClick()} className="nav-menu">
-          <li className="nav-item">
-            <Link className="nav-link" to="/">
-              About
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link" to="/">
-              Projects
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link" to="/">
-              Skills
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link" to="/">
-              Contact
-            </Link>
-          </li>
+          {navData.map(x => (
+            <li className="nav-item">
+              <Link className="nav-link" to={x.to}>
+                {x.label}
+              </Link>
+            </li>
+          ))}
         </ul>
         <ul onClick={() => handleMenuItemClick()} className="menu-social">
           <li className="nav-item">
@@ -98,5 +85,14 @@ function handleMenuItemClick() {
   document.getElementsByTagName("html")[0].style.overflow = "unset";
   document.getElementsByName("menu")[0].checked = false;
 }
+
+const navData = [
+  { label: "About", to: "#about" },
+  { label: "Education", to: "#education" },
+  //{ label: "Skills", to: "#skills" },
+  { label: "Portfolio", to: "#portfolio" },
+  { label: "Achievements", to: "#achievements" },
+  { label: "Contact", to: "#contact" }
+];
 
 export default Header;
