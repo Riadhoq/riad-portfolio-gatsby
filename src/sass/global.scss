@@ -6,6 +6,19 @@ body {
   color: $gray-500;
 }
 
+svg {
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.m-0 {
+  margin: 0;
+}
+
 h1,
 h2 {
   color: $gray-300;
@@ -247,7 +260,7 @@ a {
 
 .footer {
   background-color: $gray-900;
-  padding: 2em;
+  padding: $padding-top-bottom $padding-side;
   text-align: center;
   a {
     color: $gold-500;

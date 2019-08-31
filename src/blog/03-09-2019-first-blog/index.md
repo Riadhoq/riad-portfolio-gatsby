@@ -5,8 +5,4 @@ title: "My First Gatsby Post"
 published: true
 ---
 
-# This is a Blog
-
-## believe it or not
-
-I am going to write so much.
+# Blog Coming Soon

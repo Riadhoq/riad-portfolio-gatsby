@@ -43,8 +43,16 @@
       }
     }
     .navbar {
-      max-width: 66em;
+      max-width: $max-width;
       margin: 0 auto;
+    }
+    .about-container {
+      flex-direction: row;
+      max-width: $max-width;
+      margin: 0 auto;
+    }
+    .about-item {
+      order: 0;
     }
   }
 }

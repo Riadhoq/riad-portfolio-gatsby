@@ -40,8 +40,11 @@ $black: #333333;
 $anchor-bg: linear-gradient(180deg, transparent 70%, rgba(124, 34, 179, 0.7) 0);
 
 //spacing
+$padding-top-bottom: 3em;
 $padding-side: 2em;
 $margin-bottom: 1.5em;
+$margin-top: 1.5em;
+$max-width: 66em;
 
 :export {
   gold: $gold;
