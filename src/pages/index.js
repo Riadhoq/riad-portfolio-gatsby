@@ -24,6 +24,7 @@ const IndexPage = () => (
         <h1 className="h1">Riadul Hoque</h1>
         <h2 className="h2">Full Stack Web Developer</h2>
         <p className="p">Complex problems, simple solutions</p>
+        <a href="#contact" className="btn btn-primary">Contact Now</a>
       </div>
     </section>
     <section className="about white" id="about">
