@@ -176,8 +176,10 @@ function ContactMe() {
   <ellipse cx="505" cy="584.7" fill="#fbbebe" rx="1.3" ry="1.8" transform="rotate(-37.2 237.5 580.6)"/>
 </svg>
       </div>
-        <form className="form" name="contact" method="POST" data-netlify="true">
+        <form className="form" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" >
         <h2 className="h2">Contact Me</h2>
+        <input type="hidden" name="bot-field" />
+        <input type="hidden" name="form-name" value="contact" />
           <label>Name *</label>
           <input required type="text" name="name" />
           <label>Email *</label>
