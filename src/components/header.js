@@ -34,17 +34,32 @@ const Header = () => (
         </ul>
         <ul onClick={() => handleMenuItemClick()} className="menu-social">
           <li className="nav-item">
-            <a className="nav-link" target="_blank" rel="noreferrer noopener" href="https://github.com/riadhoq">
+            <a
+              className="nav-link"
+              target="_blank"
+              rel="noreferrer noopener"
+              href="https://github.com/riadhoq"
+            >
               <FaGithubSquare size="3em" />
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" target="_blank" rel="noreferrer noopener" href="https://www.linkedin.com/in/riadhoq">
+            <a
+              className="nav-link"
+              target="_blank"
+              rel="noreferrer noopener"
+              href="https://www.linkedin.com/in/riadhoq"
+            >
               <FaLinkedinIn size="3em" />
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" target="_blank" rel="noreferrer noopener" href="https://twitter.com/hoqriad">
+            <a
+              className="nav-link"
+              target="_blank"
+              rel="noreferrer noopener"
+              href="https://twitter.com/hoqriad"
+            >
               <FaTwitterSquare size="3em" />
             </a>
           </li>
@@ -87,7 +102,7 @@ function handleMenuItemClick() {
 }
 
 const navData = [
-  { label: "About", to: "#about" },
+  { label: "About", to: "#about" }
   // { label: "Education", to: "#education" },
   // { label: "Skills", to: "#skills" },
   // { label: "Portfolio", to: "#portfolio" },
