@@ -102,12 +102,12 @@ function handleMenuItemClick() {
 }
 
 const navData = [
-  { label: "About", to: "#about" }
+  { label: "About", to: "#about" },
   // { label: "Education", to: "#education" },
   // { label: "Skills", to: "#skills" },
   // { label: "Portfolio", to: "#portfolio" },
   // { label: "Achievements", to: "#achievements" },
-  // { label: "Contact", to: "#contact" }
+  { label: "Contact", to: "#contact" }
 ];
 
 export default Header;

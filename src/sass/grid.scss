@@ -6,6 +6,11 @@
     html {
       overflow: auto !important;
     }
+    .content-container,
+    .navbar {
+      max-width: $max-width;
+      margin: 0 auto;
+    }
     .header {
       max-width: 100%;
       .hamburger {
@@ -42,14 +47,8 @@
         display: none;
       }
     }
-    .navbar {
-      max-width: $max-width;
-      margin: 0 auto;
-    }
-    .about-container {
+    .about-container, .contact-container {
       flex-direction: row;
-      max-width: $max-width;
-      margin: 0 auto;
     }
     .about-item {
       order: 0;

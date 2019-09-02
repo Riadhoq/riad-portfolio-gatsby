@@ -43,11 +43,21 @@
   }
 }
 
-.about {
+.about,
+.contact-form-section {
   padding: $padding-top-bottom $padding-side;
 }
 
-.about-container {
+.contact-form-section {
+  background: #2e1f37;
+  .form {
+    input, textarea, select {
+      color: $gray-300;
+    }
+  }
+}
+
+.about-container, .contact-container {
   display: flex;
   align-items: center;
   position: relative;
@@ -57,13 +67,40 @@
 .about-item {
   width: 100%;
   order: 1;
-  .h2 {
-    text-transform: uppercase;
-    font-weight: bold;
-  }
+  padding-right: $padding-side;
 }
 
 .about-svg-container {
   width: 100%;
+}
+
+.contact-svg-container {
+  width: 100%;
   padding-right: $padding-side;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+label {
+  margin-top: 1em;
+}
+
+input,
+textarea,
+select {
+  margin-top: 0.5em;
+  border: none;
+  padding: 8px;
+  background: #473652;
+}
+
+.content-container {
+    .h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
 }

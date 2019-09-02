@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { BackgroundImage } from "../components/image";
+import ContactMe from "../components/contact";
 const IndexPage = () => (
   <Layout>
     <SEO
@@ -26,7 +27,7 @@ const IndexPage = () => (
       </div>
     </section>
     <section className="about white" id="about">
-      <div className="about-container">
+      <div className="content-container about-container">
         <div className="about-item">
           <h2 className="h2">About Me</h2>
           <p className="m-0">
@@ -40,7 +41,7 @@ const IndexPage = () => (
           <svg
             xmlns="http://www.w3.org/2000/svg"
             data-name="Layer 1"
-            class="about-svg w-100"
+            className="about-svg w-100"
             viewBox="0 0 1076 755"
           >
             <path
@@ -125,6 +126,7 @@ const IndexPage = () => (
         </div>
       </div>
     </section>
+    <ContactMe />
   </Layout>
 );
 
