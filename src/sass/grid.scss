@@ -1,7 +1,7 @@
 @supports (grid-area: auto) {
   @media screen and (min-width: 50em) {
     .portfolio {
-      max-width: 1920px;
+      max-width: initial;
     }
     html {
       overflow: auto !important;
@@ -47,7 +47,8 @@
         display: none;
       }
     }
-    .about-container, .contact-container {
+    .about-container,
+    .contact-container {
       flex-direction: row;
     }
     .about-item {

@@ -1,7 +1,5 @@
 import React from "react";
-import { StaticQuery, graphql } from "gatsby";
-import Img from "gatsby-image";
-
+import bgImage from "../images/bg.svg";
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
  * images with lazy loading and reduced file sizes. The image is loaded using a
@@ -14,23 +12,5 @@ import Img from "gatsby-image";
  */
 
 export const BackgroundImage = () => (
-  <StaticQuery
-    query={graphql`
-      query {
-        placeholderImage: file(relativePath: { eq: "background-image.png" }) {
-          childImageSharp {
-            fluid(maxWidth: 1920, quality: 80) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-    `}
-    render={data => (
-      <Img
-        className="hero-img"
-        fluid={data.placeholderImage.childImageSharp.fluid}
-      />
-    )}
-  />
+  <img className="hero-img fluid-img w-100" src={bgImage} alt="Logo" />
 );

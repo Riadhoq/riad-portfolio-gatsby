@@ -51,13 +51,16 @@
 .contact-form-section {
   background: #2e1f37;
   .form {
-    input, textarea, select {
+    input,
+    textarea,
+    select {
       color: $gray-300;
     }
   }
 }
 
-.about-container, .contact-container {
+.about-container,
+.contact-container {
   display: flex;
   align-items: center;
   position: relative;
@@ -99,7 +102,7 @@ select {
 }
 
 .content-container {
-    .h2 {
+  .h2 {
     text-transform: uppercase;
     font-weight: bold;
   }

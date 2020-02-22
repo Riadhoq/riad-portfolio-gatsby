@@ -2,6 +2,7 @@ import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
 import svgElement from "../images/logo.svg";
+import downloadResume from "../downloads/Riadul_Hoque_Resume_2020.pdf";
 import { FaGithubSquare, FaLinkedinIn, FaTwitterSquare } from "react-icons/fa";
 const Header = () => (
   <header className="header is-transparent">
@@ -24,13 +25,18 @@ const Header = () => (
       </label>
       <div className="nav-menu-container">
         <ul onClick={() => handleMenuItemClick()} className="nav-menu">
-          {navData.map(x => (
-            <li className="nav-item">
+          {navData.map((x, i) => (
+            <li key={i} className="nav-item">
               <Link className="nav-link" to={x.to}>
                 {x.label}
               </Link>
             </li>
           ))}
+          <li className="nav-item">
+            <a href={downloadResume} className="nav-link">
+              Resume
+            </a>
+          </li>
         </ul>
         <ul onClick={() => handleMenuItemClick()} className="menu-social">
           <li className="nav-item">
