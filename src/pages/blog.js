@@ -12,12 +12,12 @@ export default function Blog({ data }) {
       <Helmet title={`Blog - Riadul Hoque`} />
       {posts ? (
         posts
-          .filter(post => post.node.frontmatter.title.length > 0)
+          .filter((post) => post.node.frontmatter.title.length > 0)
           .map(({ node: post }) => {
             return (
               <div className="blog-post-preview" key={post.id}>
                 <h1>
-                  <Link to={post.frontmatter.path}>
+                  <Link to={post.frontmatter.slug}>
                     {post.frontmatter.title}
                   </Link>
                 </h1>
@@ -45,7 +45,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             date(formatString: "MMMM DD, YYYY")
-            path
+            slug
           }
         }
       }

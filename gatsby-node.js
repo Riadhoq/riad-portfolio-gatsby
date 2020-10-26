@@ -15,22 +15,24 @@ exports.createPages = ({ graphql, actions }) => {
             id
             frontmatter {
               date
-              path
+              slug
               title
             }
           }
         }
       }
     }
-  `).then(result => {
+  `).then((result) => {
     if (result.errors) {
       return Promise.reject(result.errors);
     }
+
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
       createPage({
-        path: node.frontmatter.path,
+        path: node.frontmatter.slug || "blog/path",
         component: blogPostTemplate,
-        context: {} // additional data can be passed via context
+        context: {}, // additional data can be passed via context,
+        pathPrefix: "/",
       });
     });
   });
