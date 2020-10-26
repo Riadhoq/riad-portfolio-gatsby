@@ -31,7 +31,9 @@ exports.createPages = ({ graphql, actions }) => {
       createPage({
         path: node.frontmatter.slug || "blog/path",
         component: blogPostTemplate,
-        context: {}, // additional data can be passed via context,
+        context: {
+          slug: node.frontmatter.slug,
+        }, // additional data can be passed via context,
         pathPrefix: "/",
       });
     });
