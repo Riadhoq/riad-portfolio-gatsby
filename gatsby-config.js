@@ -53,7 +53,9 @@ module.exports = {
       resolve: `gatsby-plugin-sass`,
       options: {
         precision: 8,
-        postCssPlugins: [autoprefixer({ browsers: ["last 2 versions"] })],
+        postCssPlugins: [
+          autoprefixer({ overrideBrowserslist: ["last 2 versions"] }),
+        ],
       },
     },
     {
