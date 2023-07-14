@@ -2,7 +2,7 @@ import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
 import svgElement from "../images/logo.svg";
-import downloadResume from "../downloads/Riadul_Hoque_Resume_2020.pdf";
+import downloadResume from "../downloads/Riadul_Hoque_Resume_2021.pdf";
 import { FaGithubSquare, FaLinkedinIn, FaTwitterSquare } from "react-icons/fa";
 const Header = () => (
   <header className="header is-transparent">
@@ -12,7 +12,7 @@ const Header = () => (
       </Link>
       <span className="name">Riadul Hoque</span>
       <input
-        onChange={e => handleMenuToggle(e)}
+        onChange={(e) => handleMenuToggle(e)}
         type="checkbox"
         name="menu"
         id="menu"
@@ -76,11 +76,11 @@ const Header = () => (
 );
 
 Header.propTypes = {
-  siteTitle: PropTypes.string
+  siteTitle: PropTypes.string,
 };
 
 Header.defaultProps = {
-  siteTitle: ``
+  siteTitle: ``,
 };
 
 function handleMenuToggle(e) {
@@ -113,7 +113,7 @@ const navData = [
   // { label: "Skills", to: "#skills" },
   // { label: "Portfolio", to: "#portfolio" },
   // { label: "Achievements", to: "#achievements" },
-  { label: "Contact", to: "#contact" }
+  { label: "Contact", to: "#contact" },
 ];
 
 export default Header;
